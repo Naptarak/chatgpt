@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #0f1724, #04070e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+}
+
+#forecast {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.hour {
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.hour span {
+  display: block;
+  font-size: 0.8rem;
+  color: #a8b2d1;
+}
+.hour strong {
+  font-size: 1.4rem;
+  color: #6cf;
+}
